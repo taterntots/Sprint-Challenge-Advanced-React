@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import PlayerList from './components/PlayerList';
+import LightMode from './components/LightMode';
 import './App.css';
 
 class App extends React.Component {
@@ -25,6 +26,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <LightMode />
         <header className="App-header">
           <h1>Women's World Cup</h1>
           <PlayerList players={this.state.players} />

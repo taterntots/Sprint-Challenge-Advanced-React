@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import PlayerList from './components/PlayerList';
 import './App.css';
-import Axios from 'axios';
 
 class App extends React.Component {
   constructor() {
@@ -27,6 +27,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <h1>Women's World Cup</h1>
+          <PlayerList players={this.state.players} />
         </header>
       </div>
     );
